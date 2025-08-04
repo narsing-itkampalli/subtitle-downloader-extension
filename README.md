@@ -2,7 +2,6 @@
 
 **Subtitle Downloader** is a lightweight Chrome extension that automatically logs `.vtt` (WebVTT subtitle) files from the network requests of any website and allows users to download them directly — including those from child iframes. It’s especially helpful when streaming platforms load subtitles dynamically and don’t provide an easy download option.
 
----
 
 ## 🎯 Features
 
@@ -13,7 +12,6 @@
 - 💡 Works without needing to open Chrome DevTools.
 - ⚙️ Keeps logging subtitle requests while the tab is open.
 
----
 
 ## 📦 Installation
 
@@ -23,7 +21,6 @@
 4. Click **Load unpacked**.
 5. Select the extension directory (where the `manifest.json` is located).
 
----
 
 ## 🚀 How to Use
 
@@ -36,7 +33,6 @@
    - You’ll see a “No files found” message.
    - Try reloading the video or enabling subtitles, then reopen the extension popup.
 
----
 
 ## 🛠️ How It Works
 
@@ -46,7 +42,6 @@
   - Contain `'eng'` in the URL (to target English subtitles)
 - The popup script queries the current tab’s DOM to extract the episode number and title (from `.ep-item.active`) to use as the subtitle filename.
 
----
 
 ## 🧩 Permissions Used
 
@@ -59,7 +54,6 @@
 | `activeTab`      | To allow injecting scripts into the current page  |
 | `<all_urls>`     | To capture all subtitle requests across websites  |
 
----
 
 ## 📁 Project Structure
 
@@ -75,7 +69,6 @@
 
 ```
 
----
 
 ## 📝 Notes
 
@@ -83,7 +76,6 @@
 - The extension only stores the **latest matching subtitle request** — modify `background.js` if you want to keep multiple.
 - The `.ep-item.active` DOM selector may need adjustment depending on the site you are targeting.
 
----
 
 ## 🙋 Need Help?
 
